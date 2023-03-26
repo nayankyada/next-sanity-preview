@@ -1,0 +1,98 @@
+.cropControls {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+	.cropControls {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.react_select{
+  width: 100px;
+}
+.cropControls > * {
+  margin-bottom: 3px;
+}
+body {
+  font-family: sans-serif;
+  min-width: 360px;
+  padding: 8px;
+  margin: 0px;
+}
+.imageTool {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.cropTool {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.previewImage {
+  width: 100%;
+}
+.title {
+  text-align: center;
+}
+
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 12px;
+  background-color: #4245a8;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
+
+.downloadButton {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 12px;
+  background-color: #4245a8;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.iconText{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.downloadButton svg {
+  height: 16px;
+  margin-right: 4px;
+}
