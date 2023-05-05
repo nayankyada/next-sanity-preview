@@ -60,7 +60,8 @@ const ImageTool = (props) => {
   const onImageLoad = (e) => {
     if (aspect) {
       const { width, height } = e.currentTarget;
-      setCrop(centerAspectCrop(width, height, aspect.value));
+      setCrop(null);
+      setCompletedCrop(null)
     }
   };
 
@@ -160,7 +161,13 @@ const ImageTool = (props) => {
             options={options}
             defaultValue={aspect}
             onChange={(e) => {
-              e.value ? setAspect(e) : handleToggleAspectClick();
+              if (e.value) {
+                setAspect(e);
+                setCrop(null)
+                setCompletedCrop(null);
+              } else {
+                handleToggleAspectClick();
+              }
             }}
             className="react_select"
           />
