@@ -5,4 +5,5 @@ export const options = [
     { label: "4:5", value: 4 / 5 },
     { label: "4:6", value: 4 / 6 },
     { label: "5:3", value: 5 / 3 },
+    { label: "9:16", value: 9 / 16 },
   ];
